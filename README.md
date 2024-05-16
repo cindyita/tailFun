@@ -4,5 +4,6 @@ Recursos gratuitos para proyectos tailwindCSS: Botones, alertas, dropdown, colla
 
 Ver ejemplos de uso
 
-Uso incluir: tailfun.js, tailfun.css, html.php
+## Uso
+Incluir: tailfun.js, tailfun.css, html.php
 Requiere: tailwindCSS, jQuery
