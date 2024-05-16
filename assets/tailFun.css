@@ -1,0 +1,97 @@
+
+.collapseElement {
+    display: none;
+    transition: max-height 0.3s ease;
+}
+
+.page-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: white;
+    z-index: 3;
+}
+
+.page-overlay .content {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.page-opacity-0 {
+    opacity: 0;
+}
+
+.z-20 {
+    z-index: 20;
+}
+
+/* toggle-pill-color */
+.toggle-pill-color input[type="checkbox"] {
+  display: none;
+}
+.toggle-pill-color input[type="checkbox"] + label {
+  display: block;
+  position: relative;
+  width: 3em;
+  height: 1.6em;
+  margin-bottom: 20px;
+  border-radius: 1em;
+  background: lightgrey;
+  box-shadow: inset 0px 0px 5px rgba(0, 0, 0, 0.3);
+  cursor: pointer;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  -webkit-transition: background 0.1s ease-in-out;
+  transition: background 0.1s ease-in-out;
+}
+.toggle-pill-color input[type="checkbox"] + label:before {
+  content: "";
+  display: block;
+  width: 1.2em;
+  height: 1.2em;
+  border-radius: 1em;
+  background: #fff;
+  box-shadow: 2px 0px 5px rgba(0, 0, 0, 0.2);
+  position: absolute;
+  left: 0.2em;
+  top: 0.2em;
+  -webkit-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+}
+.toggle-pill-color input[type="checkbox"]:checked + label {
+  background: var(--primary);
+}
+.toggle-pill-color input[type="checkbox"]:checked + label:before {
+  box-shadow: -2px 0px 5px rgba(0, 0, 0, 0.2);
+  left: 1.6em;
+}
+/* toggle-pill-color end */
+
+.tooltip-container {
+  position: relative;
+}
+
+.tooltip-trigger:hover {
+    background-color: var(--primary);
+}
+
+.tooltip-trigger:hover::before {
+  content: attr(title);
+  position: absolute;
+  background-color: #333;
+  color: #fff;
+  padding: 5px;
+  border-radius: 3px;
+  z-index: 1;
+  top: -30px;
+  left: 0;
+  white-space: nowrap;
+  display: block;
+}
+

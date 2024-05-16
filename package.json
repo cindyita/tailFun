@@ -1,0 +1,11 @@
+{
+  "name": "tailfun",
+  "version": "1.0.0",
+  "description": "Recursos para proyectos tailwindCSS",
+  "scripts": {
+    "start": "npx tailwindcss -i tailwind.css -o ./assets/required/tailwind/tailwind.css --watch"
+  },
+  "devDependencies": {
+    "tailwindcss": "^3.3.3"
+  }
+}
