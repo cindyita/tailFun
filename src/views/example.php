@@ -118,6 +118,7 @@
         <div class="relative">
             <div>
                 <input type="text" id="busqueda" class="w-full border-2 border-red-500 rounded-lg py-2 px-3 focus:outline-none focus:ring-2 focus:ring-red-500" autocomplete="off" placeholder="Busca una fruta (Escribe dos letras o más)" oninput="intelligentSearch('busqueda-id', 'busqueda','sug-data','sug-data-results',2);">
+                
                 <input type="hidden" id="busqueda-id">
 
                 <div id="sug-data-results" class="hidden absolute z-10 bg-white mt-2 ring-1 ring-gray-300 w-full overflow-hidden rounded-md shadow-lg">
